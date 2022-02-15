@@ -8,6 +8,7 @@ body{
     font-family: Ninoto sans, sans-serif;
 }
 
+/* Navigation */
 nav{
     position: fixed;
     width: 100%;
@@ -82,4 +83,126 @@ nav{
         justify-content: center;
         height: 70px;
     }
+}
+
+/* Accueil */
+
+.accueil{
+    width: 100%;
+    height: 100vh;
+    min-height: 970px;
+    background-image: url(ressources/photo-1610375228550-d5cabc1d4090.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px dotted #777;
+    padding-top: 1px;
+}
+
+.logo-kyoto{
+    border-radius: 50%;
+    width: 180px;
+    display: block;
+    margin: 179px auto 0;
+}
+
+.accueil h1{
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 0 0 10px #000;
+    color: #f1f1f1;
+    margin-top: 10px;
+    font-family: Merienda one, sans-serif;
+}
+
+.sous-titre{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin: 5px 0;
+    text-shadow: 0 0 10px #000;
+}
+
+.btn-accueil{
+    background: crimson;
+    border-radius: 99999px;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    color: #f1f1f1;
+    cursor: pointer;
+    border: 1px solid #333;
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    height: 70px;
+    line-height: 70px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-accueil:hover{
+    background: rgb(177,0,36);
+    color: #fff;
+}
+
+@media screen  and (max-width: 860px) {
+    .accueil{
+        height: 650px;
+        min-height: auto;
+    }
+
+    .logo-kyoto{
+        margin: 120px auto 0;
+    }
+
+    .accueil h1{
+        font-size: 60px;
+    }
+
+    .sous-titre{
+        font-size: 23px;
+    }
+
+    .btn-accueil{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        margin: 15px auto 0;
+    }
+    
+}
+
+
+@media screen  and (max-width: 400px) {
+    .accueil{
+        height: 550px;
+    }
+
+    .logo-kyoto{
+        width: 150px;
+        margin: 110px auto 0;
+    }
+
+    .accueil h1{
+        font-size: 35px;
+    }
+
+    .sous-titre{
+        font-size: 20px;
+    }
+
+    .btn-accueil{
+        width: 130px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+
+    .logo-menu{
+        width: 40px;
+        top: 15px;
+    }
+    
 }
