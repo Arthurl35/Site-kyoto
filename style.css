@@ -135,10 +135,12 @@ nav{
     border: 1px solid #333;
     display: block;
     width: 200px;
-    margin: 30px auto 0;
+    margin: 30px auto ;
     height: 70px;
     line-height: 70px;
     transition: all 0.2s ease-in-out;
+    position: relative;
+    bottom: 10px;
 }
 
 .btn-accueil:hover{
